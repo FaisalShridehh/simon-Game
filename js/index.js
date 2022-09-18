@@ -27,7 +27,7 @@ let colorsSequence = function () {
   // console.log(randomChosenColor);
   // console.log(gamePattern);
 
-  $(`#${randomChosenColor}`).fadeIn(100).fadeOut(100).fadeIn(100); //animate the buttons by flashing it
+  $(`#${randomChosenColor}`).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100); //animate the buttons by flashing it
 
   playSound(randomChosenColor); // to play a sound depends on the color name of what we get from randomChosenColor variable
 };
