@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  position: relative;
+}
+
+
+.game-header , #level-title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 3.2rem;
+  font-family: "Press Start 2P", cursive;
+  z-index: 5;
+}
+#level-title{
+  font-size: 1.2rem;
+}
+.simon-container {
+  text-align: center;
+  margin-top: 130px;
+  position: relative;
+  /* border: 3px solid red; */
+}
+
+/* .first-row{
+    background-color: brown;
+    display: inline-block;
+} */
+.simon-container{
+    /* border: 1px solid red; */
+    background-color: #7575752a;
+    width: 500px;
+    height: 500px;
+    padding: 40px;
+    margin: 70px auto;
+    border-radius: 100%;
+}
+.circle-simon {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+  border-top-right-radius: 100%;
+  opacity: 0.5;
+}
+.green {
+  background-color: green;
+  border-top-left-radius: 100%;
+  opacity: 0.5;
+}
+.yellow {
+  background-color: yellow;
+  border-bottom-left-radius: 100%;
+  opacity: 0.5;
+}
+.blue {
+  background-color: blue;
+  border-bottom-right-radius: 100%;
+  opacity: 0.5;
+}
+.circle-simon:hover {
+  opacity: 1;
+  border: 2px solid #fff;
+  transform: scale(1.05);
+}
+/* .circle-simon.active {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.849);
+  opacity: 1;
+} */
+.center {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+  border-radius: 100%;
+  top: 29%;
+  right: 29%;
+}
+
+@media all and (max-width : 410px) {
+  .circle-simon{
+    border-radius: 0%;
+  }
+  .center{
+    visibility: hidden;
+  }
+}
+@media all and (max-width : 610px) {
+
+  .center{
+    right: 33%;
+  }
+}
+
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.game-over{
+  background-color: red;
+}
+.about-game{
+  /* border:  1px solid red; */
+  background-color: rgb(77, 0, 0);
+  /* color: #000; */
+  width: 400px;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  line-height: 1.4;
+  font-size: 1.3rem;
+  padding: 40px;
+  z-index: -1;
+}
+.about-game h3{
+  font-size: 1.8rem;
+}
+.about-game li{
+  margin-top: 15px;
+}
+
+.hidden-about{
+  visibility: hidden;
+}
